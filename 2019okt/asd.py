@@ -5,7 +5,7 @@ with open('utasadat.txt') as f:
 # print("A buszra", len(adatok), "utas akart fellszálni")
 
 
-# print(adatok)
+print(adatok)
 # import datetime
 #
 # nszalfel = 0
