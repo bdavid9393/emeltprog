@@ -28,10 +28,10 @@ file = open("athaladas.txt", "w")
 szemelyek = []
 for p in adatok:
     if p.split(" ")[2] not in szemelyek:
-        szemelyek.append(p.split(" ")[2])
+        szemelyek.append(int(p.split(" ")[2]))
 
 
-for l in range(1, len(szemelyek) + 1):
+for l in range(1, max(szemelyek) + 1):
     athaladas = 0
     for i in adatok:
         if i.split(" ")[2] == str(l):
