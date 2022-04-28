@@ -76,8 +76,10 @@ if szam % 2 == 1:
             hazSzam2 += 2
 
 noszin.append(hazSzin[int(szam / 2 - 1)])
-noszin.append(hazSzin[int(szam / 2 + 1)])
+if len(hazSzin) != int(szam / 2 + 1):
+    noszin.append(hazSzin[int(szam / 2 + 1)])
 noszin.append(hazSzin[int(szam / 2 )])
+print(noszin)
 szinek = ["A", "B", "C", "D", "E", "F", "G", "J"]
 for m in szinek:
     if m not in noszin:
